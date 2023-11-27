@@ -1,0 +1,29 @@
+.exemple3 header, .exemple3 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    background-color: darkslategray;
+    width: 100vw;
+    height: 20vh;
+}
+
+.exemple3 section {
+    width: 60vw;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.exemple3 nav{
+    position: relative;
+}
+
+.exemple3 nav ul {
+    position: absolute;
+    left: -100px;
+    transition: all 0.5s;
+}
+
+.exemple3 nav input:checked+ul{
+    left: 0;
+}

@@ -1,0 +1,37 @@
+.exemple1 nav{
+    width: 80%;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.exemple1 ul {
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.exemple1 nav a{
+    display: block;
+    width: 100px;
+    padding: 5px 0 5px 20px;
+    background-image: url("../images/button.gif");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font: bold 14px sans-serif;
+    color: black;
+
+    transition: all 0.5s;
+}
+
+.exemple1 nav a:hover{
+    background-position: -157px 0;
+}
+
+.exemple1 nav a:active, .exemple1 nav a.etatActif{
+     background-position: -314px 0;
+    color:antiquewhite;
+}

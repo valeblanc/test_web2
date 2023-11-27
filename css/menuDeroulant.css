@@ -1,0 +1,64 @@
+.exemple2 *{
+    margin: 0;
+    padding: 0;
+}
+
+.exemple2 nav {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+    height: 40px;
+}
+
+.exemple2 ul {
+    display: block;
+    font: 1em sans-serif;
+    width: 150px;
+    background-color: white;
+}
+
+.exemple2 ul ul {
+    /* display: none;   */
+    margin-left: -1px;
+}
+
+/*.exemple2 ul:hover ul {            enlever!
+    display: block;
+}*/
+
+.exemple2 ul li {
+    list-style:none;
+    border: 1px solid silver;;
+}
+
+.exemple2 ul ul li {
+    height: 0;
+    opacity: 0;
+    border-bottom: none;   /* */
+    margin-top: -2px;      /* */
+
+    transition-property:height, opacity;
+    transition-duration: 0.1s, 0.05s;
+    transition-timing-function: ease-in;
+}
+
+.exemple2 li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 7px;
+}
+
+.exemple2 li a:hover {
+    background-color: chartreuse;
+}
+
+.exemple2 ul li:hover ul li {
+    opacity: 1;
+    height: 30px;
+}
+
